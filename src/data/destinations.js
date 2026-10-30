@@ -1,0 +1,21 @@
+export const destinations = [
+  { id: "lisbon", name: "Lisbon", country: "Portugal", category: "City escape", description: "Colorful streets, tiled facades, and Atlantic light.", image: "https://images.unsplash.com/photo-1555881400-74d7acaacd8b?auto=format&fit=crop&w=1000&q=85", lat: 38.7223, lng: -9.1393 },
+  { id: "bali", name: "Bali", country: "Indonesia", category: "Nature", description: "Lush landscapes, temple mornings, and slow days by the water.", image: "https://images.unsplash.com/photo-1537996194471-e657df975ab4?auto=format&fit=crop&w=1000&q=85", lat: -8.4095, lng: 115.1889 },
+  { id: "paris", name: "Paris", country: "France", category: "Culture", description: "Neighborhood cafés, galleries, and riverside walks.", image: "/images/paris.jpg", lat: 48.8566, lng: 2.3522 },
+  { id: "kyoto", name: "Kyoto", country: "Japan", category: "Culture", description: "Temple gardens, lantern-lit lanes, and matcha mornings.", image: "https://images.unsplash.com/photo-1493976040374-85c8e12f0c0e?auto=format&fit=crop&w=1000&q=85", lat: 35.0116, lng: 135.7681 },
+  { id: "amalfi", name: "Amalfi Coast", country: "Italy", category: "Coast", description: "Pastel villages, lemon groves, and deep blue water.", image: "https://images.unsplash.com/photo-1533105079780-92b9be482077?auto=format&fit=crop&w=1000&q=85", lat: 40.6333, lng: 14.6029 },
+  { id: "marrakech", name: "Marrakech", country: "Morocco", category: "Culture", description: "Spice-scented souks, riads, and warm desert colors.", image: "https://images.unsplash.com/photo-1597212618440-806262de4f6b?auto=format&fit=crop&w=1000&q=85", lat: 31.6295, lng: -7.9811 },
+  { id: "reykjavik", name: "Reykjavík", country: "Iceland", category: "Nature", description: "A gateway to waterfalls, hot springs, and wild coastlines.", image: "https://images.unsplash.com/photo-1476610182048-b716b8518aae?auto=format&fit=crop&w=1000&q=85", lat: 64.1466, lng: -21.9426 },
+  { id: "new-york", name: "New York", country: "United States", category: "City escape", description: "Big-city energy, neighborhood discoveries, and late nights.", image: "https://images.unsplash.com/photo-1496588152823-86ff7695e68f?auto=format&fit=crop&w=1000&q=85", lat: 40.7128, lng: -74.0060 },
+  { id: "cape-town", name: "Cape Town", country: "South Africa", category: "Nature", description: "Mountain trails, ocean views, and a vibrant food scene.", image: "https://images.unsplash.com/photo-1580060839134-75a5edca2e99?auto=format&fit=crop&w=1000&q=85", lat: -33.9249, lng: 18.4241 },
+  { id: "istanbul", name: "Istanbul", country: "Türkiye", category: "Culture", description: "A meeting of continents, bazaars, and waterfront evenings.", image: "https://images.unsplash.com/photo-1524231757912-21f4fe3a7200?auto=format&fit=crop&w=1000&q=85", lat: 41.0082, lng: 28.9784 },
+  { id: "santorini", name: "Santorini", country: "Greece", category: "Coast", description: "Whitewashed lanes, caldera views, and sunset colors.", image: "https://images.unsplash.com/photo-1570077188670-e3a8d69ac5ff?auto=format&fit=crop&w=1000&q=85", lat: 36.3932, lng: 25.4615 },
+  { id: "banff", name: "Banff", country: "Canada", category: "Nature", description: "Turquoise lakes and mountain air in the Canadian Rockies.", image: "https://images.unsplash.com/photo-1503614472-8c93d56cd4b8?auto=format&fit=crop&w=1000&q=85", lat: 51.1784, lng: -115.5708 },
+];
+
+export const categories = ["All", "City escape", "Nature", "Culture", "Coast"];
+
+export const demoTrips = [
+  { id: "demo-kyoto", name: "A slower kind of summer", destination: "Kyoto", country: "Japan", startDate: "2027-04-12", endDate: "2027-04-19", coverImage: destinations.find((item) => item.id === "kyoto").image, description: "Temple gardens, quiet streets, and matcha mornings.", lat: 35.0116, lng: 135.7681, activities: [], expenses: [], createdAt: "2026-01-01T10:00:00.000Z" },
+  { id: "demo-amalfi", name: "The Italian coast", destination: "Amalfi Coast", country: "Italy", startDate: "2027-06-08", endDate: "2027-06-14", coverImage: destinations.find((item) => item.id === "amalfi").image, description: "Coastal villages, long lunches, and blue water.", lat: 40.6333, lng: 14.6029, activities: [], expenses: [], createdAt: "2026-01-02T10:00:00.000Z" },
+];

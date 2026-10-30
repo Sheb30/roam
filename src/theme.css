@@ -1,0 +1,250 @@
+
+/* Roam theme system */
+
+:root[data-theme="light"] {
+    color-scheme: light;
+  }
+  
+  :root[data-theme="dark"] {
+    color-scheme: dark;
+    --color-bg: #111a16;
+    --color-surface: #19241e;
+    --color-text: #edf3ed;
+    --color-muted: #a0afa4;
+    --color-green: #a4c5a8;
+    --color-green-dark: #c1d9c3;
+    --color-green-light: #263b2e;
+    --color-sand: #26332b;
+    --color-border: #2b3a31;
+    --color-orange: #e6a875;
+    --shadow-card: 0 12px 32px rgb(0 0 0 / 22%);
+    background: var(--color-bg);
+    color: var(--color-text);
+  }
+  
+  :root[data-theme="dark"] body {
+    background: var(--color-bg);
+    color: var(--color-text);
+  }
+  
+  :root[data-theme="dark"] .site-header {
+    background: rgb(17 26 22 / 95%);
+    border-color: var(--color-border);
+  }
+  
+  :root[data-theme="dark"] .nav-link {
+    color: #b0beb3;
+  }
+  
+  :root[data-theme="dark"] .nav-link:hover,
+  :root[data-theme="dark"] .nav-link-active {
+    color: #d2e7d4;
+    background: #263b2e;
+  }
+  
+  :root[data-theme="dark"] .welcome-copy > p,
+  :root[data-theme="dark"] .welcome-footnote,
+  :root[data-theme="dark"] .trip-description,
+  :root[data-theme="dark"] .destination-description,
+  :root[data-theme="dark"] .destination-country,
+  :root[data-theme="dark"] .page-intro > p,
+  :root[data-theme="dark"] .placeholder-page > p {
+    color: var(--color-muted);
+  }
+  
+  :root[data-theme="dark"] .image-caption {
+    color: var(--color-text);
+    background: #1b2821;
+    border-color: var(--color-border);
+  }
+  
+  :root[data-theme="dark"] .caption-icon,
+  :root[data-theme="dark"] .footnote-icon,
+  :root[data-theme="dark"] .placeholder-icon {
+    color: #c1d9c3;
+    background: #2b4032;
+    border-color: #405947;
+  }
+  
+  :root[data-theme="dark"] .trip-card,
+  :root[data-theme="dark"] .destination-card {
+    background: var(--color-surface);
+    border-color: var(--color-border);
+  }
+  
+  :root[data-theme="dark"] .trip-meta {
+    color: #b3c1b6;
+    border-color: var(--color-border);
+  }
+  
+  :root[data-theme="dark"] .trip-status,
+  :root[data-theme="dark"] .destination-category {
+    color: #26372c;
+    background: rgb(239 245 237 / 94%);
+  }
+  
+  :root[data-theme="dark"] .new-trip-card {
+    color: var(--color-text);
+    background: #1d2a22;
+    border-color: #536c58;
+  }
+  
+  :root[data-theme="dark"] .new-trip-card:hover {
+    background: #24362a;
+  }
+  
+  :root[data-theme="dark"] .new-trip-icon {
+    color: #c1d9c3;
+    background: #2b4032;
+  }
+  
+  :root[data-theme="dark"] .search-box {
+    color: var(--color-muted);
+    background: var(--color-surface);
+    border-color: var(--color-border);
+  }
+  
+  :root[data-theme="dark"] .search-box input {
+    color: var(--color-text);
+  }
+  
+  :root[data-theme="dark"] .search-box input::placeholder {
+    color: #84958a;
+  }
+  
+  :root[data-theme="dark"] .clear-search {
+    color: var(--color-text);
+    background: #2b3930;
+  }
+  
+  :root[data-theme="dark"] .filter-chip {
+    color: #b6c3b9;
+    border-color: var(--color-border);
+  }
+  
+  :root[data-theme="dark"] .filter-chip:hover,
+  :root[data-theme="dark"] .filter-chip-active {
+    color: #142018;
+    background: #a4c5a8;
+    border-color: #a4c5a8;
+  }
+  
+  :root[data-theme="dark"] .secondary-button {
+    color: #c1d9c3;
+    background: #293e30;
+    border-color: #354b3b;
+  }
+  
+  :root[data-theme="dark"] .secondary-link,
+  :root[data-theme="dark"] .text-link,
+  :root[data-theme="dark"] .new-trip-link,
+  :root[data-theme="dark"] .round-arrow {
+    color: #b7d4bb;
+  }
+  
+  :root[data-theme="dark"] .round-arrow {
+    border-color: var(--color-border);
+  }
+  
+  :root[data-theme="dark"] .round-arrow:hover {
+    color: #152219;
+    background: #a4c5a8;
+  }
+  
+  :root[data-theme="dark"] .save-button {
+    color: #26372c;
+    background: #edf3ed;
+  }
+  
+  :root[data-theme="dark"] .save-button-active {
+    color: #fff;
+    background: #477b58;
+  }
+  
+  :root[data-theme="dark"] .empty-state {
+    color: #b7d4bb;
+    border-color: #405447;
+  }
+  
+  :root[data-theme="dark"] .site-footer {
+    border-color: var(--color-border);
+  }
+  
+  :root[data-theme="dark"] .image-fallback {
+    color: #b7c9b9;
+    background: #26372c;
+  }
+  
+  /* Theme switch */
+  
+  .theme-toggle {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    gap: 8px;
+    min-height: 39px;
+    padding: 0 12px;
+    border: 1px solid var(--color-border);
+    border-radius: 999px;
+    color: var(--color-text);
+    background: var(--color-surface);
+    font-size: 12px;
+    font-weight: 600;
+    cursor: pointer;
+    transition:
+      color var(--transition),
+      background var(--transition),
+      border-color var(--transition);
+  }
+  
+  .theme-toggle:hover {
+    color: var(--color-green);
+    border-color: var(--color-green);
+  }
+  
+  :root[data-theme="dark"] .theme-toggle {
+    color: #d7e6d9;
+    background: #1d2a22;
+    border-color: #3a4b3e;
+  }
+  
+  :root[data-theme="dark"] .theme-toggle:hover {
+    background: #293e30;
+  }
+  
+  @media (max-width: 900px) {
+    .theme-toggle {
+      margin-left: auto;
+    }
+  }
+  
+  @media (max-width: 600px) {
+    .header-inner {
+      flex-wrap: nowrap;
+    }
+  
+    .theme-toggle {
+      min-width: 40px;
+      width: 40px;
+      height: 40px;
+      min-height: 40px;
+      padding: 0;
+      margin-left: auto;
+      border-radius: 12px;
+    }
+  
+    .theme-toggle span {
+      display: none;
+    }
+  
+    .main-nav {
+      background: var(--color-bg);
+    }
+  }
+  
+  @media (prefers-reduced-motion: reduce) {
+    .theme-toggle {
+      transition: none;
+    }
+  }
+  

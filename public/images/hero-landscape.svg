@@ -1,0 +1,19 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1600 1000" role="img" aria-label="Illustrated mountain lake landscape">
+<defs>
+  <linearGradient id="sky" x2="0" y2="1"><stop stop-color="#c7d9d3"/><stop offset="1" stop-color="#f1e9d9"/></linearGradient>
+  <linearGradient id="water" x2="0" y2="1"><stop stop-color="#7da9a2"/><stop offset="1" stop-color="#315f61"/></linearGradient>
+  <linearGradient id="mountain" x2="0" y2="1"><stop stop-color="#708b80"/><stop offset="1" stop-color="#395b50"/></linearGradient>
+  <linearGradient id="front" x2="0" y2="1"><stop stop-color="#496b57"/><stop offset="1" stop-color="#263f36"/></linearGradient>
+</defs>
+<rect width="1600" height="1000" fill="url(#sky)"/>
+<circle cx="1230" cy="190" r="86" fill="#f6e6c7" opacity=".8"/>
+<path d="M0 560 250 270 420 465 650 190 900 510 1120 260 1390 500 1600 320V700H0Z" fill="#91a99d"/>
+<path d="m180 350 70-80 65 75-46-20-22 24-25-22Zm385 10 85-170 93 165-68-41-26 35-31-29Zm480 30 75-130 90 135-65-35-26 28-25-26Z" fill="#eef0e5" opacity=".9"/>
+<path d="M0 600 245 410 420 560 650 330 890 610 1120 400 1390 620 1600 470V740H0Z" fill="url(#mountain)"/>
+<path d="M0 620q260-65 520 0t540 0 540 10v370H0Z" fill="url(#water)"/>
+<path d="M0 730q220-35 440 0t440 0 440 0 280 0" fill="none" stroke="#c4d8c9" stroke-width="7" opacity=".35"/>
+<path d="M0 820q250-30 500 0t500 0 600 0" fill="none" stroke="#d4e2d7" stroke-width="4" opacity=".25"/>
+<path d="M0 720q180-130 350-20 95 60 180 20 130-80 250 20 140 110 270 10 150-115 300-20 120 80 250 15v255H0Z" fill="url(#front)"/>
+<g fill="#213c32"><path d="m110 720 65-185 65 185Zm90 35 54-155 54 155Zm1120-30 75-210 75 210Zm100 45 55-155 55 155Z"/><path d="m360 770 50-145 50 145Zm870 5 45-130 45 130Z"/></g>
+<g fill="#dce7d9" opacity=".55"><path d="M650 770q120-30 240 0t240 0"/><path d="M250 860q100-22 200 0t200 0"/></g>
+</svg>
