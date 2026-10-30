@@ -72,6 +72,7 @@ export function TripProvider({ children }) {
   return <TripContext.Provider value={value}>{children}</TripContext.Provider>;
 }
 
+// eslint-disable-next-line react-refresh/only-export-components
 export function useTrips() {
   const context = useContext(TripContext);
 
