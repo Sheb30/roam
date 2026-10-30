@@ -1,75 +1,98 @@
-# Roam — Travel planning workspace
+# Roam
 
-Roam is a responsive, client-side travel planner built with React and Vite. It includes trip management, destination discovery, saved places, a day-by-day itinerary, expense tracking, an OpenStreetMap view, and light/dark themes.
+<p align="center">
+  <strong>A modern travel web application built with React.</strong>
+</p>
 
-## Requirements
+<p align="center">
+  <a href="https://sheb30.github.io/roam/">Live Demo</a> ·
+  <a href="https://github.com/Sheb30/roam">Repository</a>
+</p>
 
-- Node.js 20.19+ or 22.12+
+---
+
+## Tech Stack
+
+<p align="center">
+  <img src="https://img.shields.io/badge/React-61DAFB?style=for-the-badge&logo=react&logoColor=black" alt="React" />
+  <img src="https://img.shields.io/badge/Vite-646CFF?style=for-the-badge&logo=vite&logoColor=white" alt="Vite" />
+  <img src="https://img.shields.io/badge/JavaScript-F7DF1E?style=for-the-badge&logo=javascript&logoColor=black" alt="JavaScript" />
+  <img src="https://img.shields.io/badge/ESLint-4B32C3?style=for-the-badge&logo=eslint&logoColor=white" alt="ESLint" />
+</p>
+
+## About
+
+Roam is a modern web application built with React and Vite, focused on delivering a clean and maintainable frontend experience.
+
+## Getting Started
+
+### Prerequisites
+
+- Node.js
 - npm
+- Git
 
-## Run locally
+### Installation
+
+Clone the repository:
+
+```bash
+git clone https://github.com/Sheb30/roam.git
+```
+
+Navigate to the project directory:
+
+```bash
+cd roam
+```
+
+Install dependencies:
 
 ```bash
 npm install
+```
+
+Start the development server:
+
+```bash
 npm run dev
 ```
 
-Open the local URL printed by Vite (normally `http://localhost:5173`).
+## Available Scripts
 
-## Available scripts
+| Command | Description |
+|---|---|
+| `npm run dev` | Start development server |
+| `npm run build` | Build for production |
+| `npm run lint` | Run ESLint |
+| `npm run preview` | Preview production build |
 
-```bash
-npm run dev      # Start the development server
-npm run lint     # Run ESLint
-npm run build    # Create a production build in dist/
-npm run preview  # Preview the production build locally
-```
+## Deployment
 
-## Features
+Roam is deployed on GitHub Pages using GitHub Actions.
 
-- Create, edit, and delete trips with date validation.
-- Trip data is persisted in browser localStorage.
-- Search and filter a curated destination collection.
-- Save and remove destinations; saved places persist locally.
-- Build a daily itinerary with activity editing, deletion, and drag-and-drop ordering.
-- Record expenses in multiple currencies, with totals grouped by currency and category.
-- View destination coordinates on OpenStreetMap. Curated destinations are pre-geocoded; custom trips can provide latitude and longitude.
-- Responsive layouts and a persisted light/dark theme.
+Every push to the `main` branch triggers the deployment workflow.
 
-## Data and privacy
+**Live Application:**  
+https://sheb30.github.io/roam/
 
-This version is a front-end application. Trip, itinerary, expense, saved-place, and theme data are stored in the current browser using localStorage. There is no account, backend, cloud synchronization, or cross-device sync. Clearing browser site data will remove locally stored app data. Export your data before clearing site storage if you need to preserve it.
+## Contributing
 
-The map is provided by OpenStreetMap and requires an internet connection. Destination photography uses remote Unsplash image URLs, except the included local Paris image and local hero illustration. If remote image hosts are unavailable, cards show a designed fallback rather than a broken-image icon.
+Contributions, suggestions, and bug reports are welcome.
 
-## Publish with GitHub Pages
+1. Fork the repository.
+2. Create a feature branch.
+3. Commit your changes.
+4. Open a Pull Request.
 
-1. Create a new GitHub repository (for example, `roam`).
-2. Upload the contents of this project folder to the repository root. Do not upload `node_modules/` or `dist/`.
-3. Push the default branch named `main`.
-4. In GitHub, open **Settings → Pages** and set **Build and deployment → Source** to **GitHub Actions**.
-5. The included workflow at `.github/workflows/deploy.yml` runs lint and build, then deploys `dist/` to GitHub Pages.
-6. When the workflow finishes, open the Pages URL shown in the repository's deployment settings.
+## Author
 
-The Vite configuration automatically uses the repository path when building in GitHub Actions. React Router is configured with the matching base path, and the workflow adds a `404.html` fallback for client-side routes.
+**Sheb30**
 
-## Project structure
+[GitHub Profile](https://github.com/Sheb30)
 
-```text
-roam/
-├── .github/workflows/deploy.yml
-├── public/
-│   ├── favicon.svg
-│   └── images/
-├── src/
-│   ├── context/AppDataContext.jsx
-│   ├── data/destinations.js
-│   ├── services/storage.js
-│   ├── App.jsx
-│   ├── App.css
-│   ├── index.css
-│   └── main.jsx
-├── index.html
-├── package.json
-└── vite.config.js
-```
+---
+
+<p align="center">
+  Made with React & Vite
+</p>
